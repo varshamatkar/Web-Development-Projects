@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking.com</title>
+    <meta name="keywords" content="travel booking, Travel, ">
+    <link rel="stylesheet" href="Travel Booking website.css">
+    
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <nav>
+     
+       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnSqXHUsFp_sb-ExiIR3ISwNYNKood7vImiQ&usqp=CAU" alt="Website Logo">
+      <ul>
+      <li><a href="#">Home</a></li>
+        <li><a href="#">Destinations</a></li>
+        <li><a href="#">My Bookings</a></li>
+        <li><a href="#">Sign In</a></li>
+      </ul>
+     </nav>
+  </header>
+
+<section class="page">
+  <!-- Homepage -->
+  <section id="homepage">
+    <div class="banner">
+      <!-- Showcase popular destinations, deals, and featured travel packages -->
+      <h1>Welcome to Booking.com</h1>
+      <p>Find your dream destination and book your perfect getaway today!</p>
+    </div>
+    <div class="search-form">
+      <!-- Search form -->
+      <form>
+        <input type="text" name="destination" placeholder="Enter your preferred destination">
+        <input type="date" name="travel-date" placeholder="Travel date">
+        <button type="submit">Search</button>
+      </form>
+    </div>
+    
+  </section>
+
+  
+   <section id="destination-listings">
+    <div class="filters"> 
+      <!-- Filters for refining search -->
+       <div class="filter-option">
+        <label for="location">Location:</label>
+        <select id="location" name="location">
+          <option value="all">All</option>
+          <option value="beach">Beach</option>
+          <option value="mountain">Mountain</option>
+       
+        </select>
+      </div>
+      <div class="filter-option">
+        <label for="price-range">Price Range:</label>
+        <select id="price-range" name="price-range">
+          <option value="all">All</option>
+          <option value="budget">Budget</option>
+          <option value="moderate">Moderate</option>
+           
+        </select>
+      </div>
+       
+    </div>
+    <div class="popular-destinations">
+      
+      
+      <div class="destination-card">
+        <img src="https://www.tourism-of-india.com/blog/wp-content/uploads/2017/04/manali.jpg" alt="Manali – Snow Capped Peaks
+        ">
+        <h3>Manali </h3>
+        <p>Starting price: $200</p>
+        <a href="#">View Details</a>
+      </div>
+      <div class="destination-card">
+        <img  src="https://media.easemytrip.com/media/Blog/India/637762882335748573/637762882335748573C7MPp2.jpg" alt="Destination 2">
+        <h3>Udaipur</h3>
+        <p>Starting price: $500</p>
+        <a href="#">View Details</a>
+      </div>
+      
+      <div class="destination-card">
+        <img  src="https://media.easemytrip.com/media/Blog/India/637762882335748573/637762882335748573cZj25v.jpg" alt="Destination 3">
+       
+        <h3>Mussoorie</h3>
+        <p>Starting price: $700</p>
+        <a href="#">View Details</a>
+      </div>
+      
+      <div class="destination-card">
+        <img   src="https://www.tourism-of-india.com/blog/wp-content/uploads/2017/04/mahabaleshwar.jpg" alt="Destination 4">
+        <h3>Mahabaleshwar</h3>
+        <p>Starting price: $400</p>
+        <a href="#">View Details</a>
+      </div>
+     
+  </section>
+
+  <section id="package-details">
+    <div class="package-info">
+     
+      <h4>Package Variations</h4>
+      <ul>
+        <li>Standard Package - 4 days, 3 nights</li>
+        <li>Luxury Package - 5 days, 4 nights</li>
+        <li>Honeymoon Package - 6 days, 5 nights</li>
+      </ul>
+      <h4>Itinerary</h4>
+      <p>Day 1: Arrival and check-in at the hotel. Evening at leisure.</p>
+      <p>Day 2: Sightseeing tour of local attractions and cultural experiences.</p>
+      <p>Day 3: Excursion to nearby scenic spots and adventure activities.</p>
+      <p>Day 4: Departure and transfer to the airport.</p>
+      <h4>Accommodation Options</h4>
+      <ul>
+        <li>Standard Room at Hotel ABC</li>
+        <li>Deluxe Suite at Hotel XYZ</li>
+        <li>Premium Cottage at Mountain Resort</li>
+      </ul>
+      <h4>Transportation</h4>
+      <p>Private car transfers for sightseeing and airport transfers.</p>
+      <h4>Activities</h4>
+      <ul>
+        <li>Trekking in the Himalayas</li>
+        <li>River rafting in Beas River</li>
+        <li>Paragliding adventure</li>
+        <li>Exploring local markets and shopping</li>
+        <li>Visit to ancient temples and monasteries</li>
+      </ul>
+      <h4>Pricing</h4>
+      <p>Starting from $400</p>
+      <button>Book Now</button>
+    </div>
+  </section>
+
+  <!-- Booking Process -->
+  <section id="booking-process">
+    <div class="booking-form">
+      <!-- User-friendly booking process form -->
+      <h2>Book Your Package</h2>
+      <form>
+        <input type="text" name="name" placeholder="Full Name" required>
+        <input type="email" name="email" placeholder="Email Address" required>
+        <input type="tel" name="phone" placeholder="Phone Number" required>
+        <textarea name="requirements" placeholder="Any specific requirements"></textarea>
+        <h3>Payment Details</h3>
+        <input type="text" name="card-number" placeholder="Card Number" required>
+        <input type="text" name="expiry-date" placeholder="Expiry Date" required>
+        <input type="text" name="cvv" placeholder="CVV" required>
+        <button type="submit">Complete Booking</button>
+      </form>
+    </div>
+  </section>
+
+  <section id="user-account">
+    <div class="user-dashboard">
+      <h2>Welcome, Varsha</h2>
+      <h3>My Bookings</h3>
+      <ul>
+        <li>Booking 1 - Manali Package (4 days, 3 nights)</li>
+        <li>Booking 2 - Udaipur Package (5 days, 4 nights)</li>
+      </ul>
+      <h3>Account Settings</h3>
+      <form>
+        <input type="text" name="name" placeholder="Full Name" required>
+        <input type="email" name="email" placeholder="Email Address" required>
+        <input type="password" name="password" placeholder="New Password" required>
+        <button type="submit">Update Account</button>
+      </form>
+    </div>
+  </section>
+  
+  <section id="reviews-ratings">
+    <div class="review-form">
+      <h2>Leave a Review</h2>
+      <form>
+        <input type="text" name="name" placeholder="Full Name" required>
+        <textarea name="review" placeholder="Your Review" required></textarea>
+        <input type="number" name="rating" placeholder="Rating (1-5)" required>
+        <button type="submit">Submit Review</button>
+      </form>
+    </div>
+    <div class="reviews">
+      <h2>Reviews</h2>
+      <div class="review">
+        <h3>Shrikant Dhanapune</h3>
+      <p> Manali was a beautiful destination with breathtaking views. Highly recommended!</p>
+        <span>Rating: 4/5</span>
+      </div>
+      <div class="review">
+        <h3>Varsha Matkar</h3>
+        <p>Udaipur was an incredible experience. The city's rich history and stunning palaces left me in awe. Definitely worth visiting!</p>
+        <span>Rating: 5/5</span>
+      </div>
+    </div>
+  </section>
+</section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2023 Travel Booking Website. All rights reserved.</p>
+  </footer>
+
+</body>
+
+</html>

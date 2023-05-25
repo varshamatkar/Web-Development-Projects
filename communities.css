@@ -1,0 +1,342 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+  
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+  }
+  
+  a {
+    color:black;
+    text-decoration: none;
+  }
+  nav ul li a:hover {
+   color:blue;
+  
+  }
+  video {
+    display: block;
+    max-width: 80%;
+    height: auto;
+    margin: 0 auto;
+    border: 2px solid #ccc;
+    padding: 10px;
+  }
+
+  
+  
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: right;
+  }
+  
+  nav li {
+    margin: 0 10px;
+  }
+  
+  nav a {
+    font-size: 18px;
+  }
+  nav {
+    background-color:black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 10px;
+    
+  }
+  nav ul li a {
+    color: white;
+  }
+  
+  /* Style the banner */
+  .banner {
+    background-image: url("https://fabriq.wpenginepowered.com/wp-content/uploads/2019/07/SocialCircle.jpg");
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .banner h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    
+  }
+  
+  .banner p {
+    font-size: 24px;
+    margin-bottom: 40px;
+   
+  }
+  
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f00;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+  }
+  
+  /* Style the featured content section */
+  .featured {
+    background-color: #f9f9f9;
+    padding: 50px;
+  }
+  
+  .featured h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .featured article {
+    margin-bottom: 40px;
+  }
+  
+  .featured h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .featured p {
+    font-size: 18px;
+  }
+  
+  .featured video {
+    width: 80%;
+    height: 400px;
+  }
+
+  article {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+  }
+  
+  article h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    
+  }
+  
+article p {
+    font-size: 16px;
+    line-height: 1.5;
+    color:#333;
+    
+    
+  }
+article a:hover {
+  color: #1e90ff; 
+  
+}
+  .banner a:hover{
+    background-color: #1e90ff;
+
+  }
+
+  
+  /* style for recent and upcoming event */
+
+.recent,
+.upcoming {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f9f9f9;
+  max-width: 90%;
+   margin: 48px auto;
+   border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    height: 365px;
+    
+    
+  }
+  
+
+  
+.recent h2,
+.upcoming h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-align: center;
+  
+}
+
+.recent ul,
+.upcoming ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  height: 400px;
+}
+
+.recent li,
+.upcoming li {
+  margin-bottom: 10px;
+}
+
+.recent a,
+.upcoming a {
+  color: #000;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+  padding: 10px 20px;
+  background-color:#f9f9f9;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+  display: block;
+  width: 100%;
+  text-align: center;
+  
+}
+
+.recent a:hover,
+.upcoming a:hover {
+  background-color:lightskyblue;
+}
+  
+  /* Style the footer */
+  footer {
+    background-color: #eee;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  footer p {
+    font-size: 14px;
+    color: #888;
+  }
+
+ 
+
+ 
+  @media only screen and (max-width: 768px) {
+    .banner {
+      height: 300px;
+    }
+  
+    .banner h1 {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+  
+    .banner p {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+  
+    .button {
+      font-size: 16px;
+      padding: 8px 16px;
+    }
+  
+    .featured video {
+      height: 300px;
+    }
+  
+    .recent,
+    .upcoming {
+      max-width: 100%;
+      margin: 24px auto;
+      height: auto;
+    }
+  
+    .recent ul,
+    .upcoming ul {
+      height: auto;
+    }
+  }
+  
+  @media only screen and (max-width: 600px) {
+    nav ul {
+      flex-direction:row;
+    }
+    nav a {
+      font-size: 12px;
+    }
+  
+    nav li {
+      margin: 4px 4px;
+      
+    }
+  
+    .banner h1 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+  
+    .banner p {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+  
+    .button {
+      font-size: 14px;
+      padding: 6px 12px;
+    }
+  
+    .featured {
+      padding: 30px;
+    }
+  
+    .featured h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+  
+    .featured article h3 {
+      font-size: 20px;
+      margin-bottom: 8px;
+    }
+  
+    .featured p {
+      font-size: 14px;
+    }
+  
+    .featured video {
+      height: 200px;
+    }
+  
+    .recent,
+    .upcoming {
+      padding: 20px;
+    }
+  
+    .recent h2,
+    .upcoming h2 {
+      font-size: 24px;
+      margin-bottom: 16px;
+    }
+  
+    .recent a,
+    .upcoming a {
+      font-size: 14px;
+      padding: 8px 12px;
+    }
+  
+    footer p {
+      font-size: 12px;
+    }
+  }
